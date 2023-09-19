@@ -1,0 +1,20 @@
+[package]
+edition = "2021"
+name = "db-sample"
+version = "0.0.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# Default enable napi4 feature, see https://nodejs.org/api/n-api.html#node-api-version-matrix
+napi = { version = "2.12.2", default-features = true, features = ["napi8"] }
+napi-derive = "2.12.2"
+rocksdb = "0.19"
+threadpool = "1.8.1"
+
+[build-dependencies]
+napi-build = "2.0.1"
+
+[profile.release]
+lto = true

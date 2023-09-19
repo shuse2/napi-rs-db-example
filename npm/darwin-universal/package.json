@@ -1,0 +1,15 @@
+{
+  "name": "db-sample-darwin-universal",
+  "version": "0.0.0",
+  "os": [
+    "darwin"
+  ],
+  "main": "db-sample.darwin-universal.node",
+  "files": [
+    "db-sample.darwin-universal.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}
