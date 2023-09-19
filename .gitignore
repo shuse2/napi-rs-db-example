@@ -197,3 +197,5 @@ Cargo.lock
 !.yarn/versions
 
 *.node
+
+./backup
